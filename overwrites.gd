@@ -4,7 +4,11 @@ const MOD_PATH := "res://mods-unpacked/chloecat-weaponpaths/"
 const MOD_ICON_PATH := MOD_PATH + "overwrites/content/icons/"
 const GAME_ICON_PATH := "res://content/icons/"
 
-var icons := []
+var icons := [
+	"teslachain.png",
+	"teslachaindistance1.png","teslachaindistance2.png","teslachaindistance3.png",
+	"teslachainlength1.png","teslachainlength2.png","teslachainsplit.png"
+]
 
 var loaded := []
 var iconTextures := []

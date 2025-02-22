@@ -1,0 +1,18 @@
+keys,en
+upgrades.teslachain.title,Chain Lightning
+upgrades.teslachain.desc,Each shot chains to new enemies.
+upgrades.teslachainsplit.title,Forked Lightning
+upgrades.teslachainsplit.desc,Lightning chain will split to multiple enemies.
+upgrades.teslachainlength1.title,Lightning Chain 1
+upgrades.teslachainlength1.desc,Lightning will chain to more enemies.
+upgrades.teslachainlength2.title,Lightning Chain 2
+upgrades.teslachainlength2.desc,Lightning will chain to even more enemies.
+upgrades.teslachaindistance1.title,Lightning Distance 1
+upgrades.teslachaindistance1.desc,Lightning will travel a greater distance.
+upgrades.teslachaindistance2.title,Lightning Distance 2
+upgrades.teslachaindistance2.desc,Lightning will travel an even greater distance.
+upgrades.teslachaindistance3.title,Lightning Distance 3
+upgrades.teslachaindistance3.desc,Lightning will travel an extreme distance.
+properties.tesla.splits,Forking Chain
+properties.tesla.chains,Enemies Chained {}
+properties.tesla.chaindistance,Chain Distance {}
