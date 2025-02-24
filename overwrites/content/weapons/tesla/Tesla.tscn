@@ -1,0 +1,84 @@
+[gd_scene load_steps=5 format=3 uid="uid://cphftdya5gkdh"]
+
+[ext_resource type="PackedScene" uid="uid://dl6j44x2nqnpf" path="res://content/weapons/tesla/Tesla.tscn" id="1_ba6mi"]
+[ext_resource type="Script" path="res://mods-unpacked/chloecat-weaponpaths/extensions/content/weapons/tesla/Tesla.gd" id="2_cx0fi"]
+[ext_resource type="PackedScene" path="res://content/weapons/tesla/arc/ArcGroup.tscn" id="2_r7mqi"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gs62l"]
+radius = 50.0
+
+[node name="Tesla" instance=ExtResource("1_ba6mi")]
+script = ExtResource("2_cx0fi")
+
+[node name="ChainArea2D" type="Area2D" parent="." index="10"]
+collision_layer = 0
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChainArea2D" index="0"]
+shape = SubResource("CircleShape2D_gs62l")
+
+[node name="ShootChain1" parent="ChainArea2D" index="1" instance=ExtResource("2_r7mqi")]
+visible = false
+forkSpawnArea = Vector2(8, 8)
+arcTtlFactor = 0.5
+spawnInterval = 0.05
+randomInterval = -2.0
+arcIntensity = 0.538
+randomCurvature = 0.0
+arcWildness = 0.0
+impactRadius = 12.0
+
+[node name="ShootChain2" parent="ChainArea2D" index="2" instance=ExtResource("2_r7mqi")]
+visible = false
+forkSpawnArea = Vector2(8, 8)
+arcTtlFactor = 0.5
+spawnInterval = 0.05
+randomInterval = -2.0
+arcIntensity = 0.538
+randomCurvature = 0.0
+arcWildness = 0.0
+impactRadius = 12.0
+
+[node name="ShootChain3" parent="ChainArea2D" index="3" instance=ExtResource("2_r7mqi")]
+visible = false
+forkSpawnArea = Vector2(8, 8)
+arcTtlFactor = 0.5
+spawnInterval = 0.05
+randomInterval = -2.0
+arcIntensity = 0.538
+randomCurvature = 0.0
+arcWildness = 0.0
+impactRadius = 12.0
+
+[node name="ShootChain4" parent="ChainArea2D" index="4" instance=ExtResource("2_r7mqi")]
+visible = false
+forkSpawnArea = Vector2(8, 8)
+arcTtlFactor = 0.5
+spawnInterval = 0.05
+randomInterval = -2.0
+arcIntensity = 0.538
+randomCurvature = 0.0
+arcWildness = 0.0
+impactRadius = 12.0
+
+[node name="ShootChain5" parent="ChainArea2D" index="5" instance=ExtResource("2_r7mqi")]
+visible = false
+forkSpawnArea = Vector2(8, 8)
+arcTtlFactor = 0.5
+spawnInterval = 0.05
+randomInterval = -2.0
+arcIntensity = 0.538
+randomCurvature = 0.0
+arcWildness = 0.0
+impactRadius = 12.0
+
+[node name="ShootChain6" parent="ChainArea2D" index="6" instance=ExtResource("2_r7mqi")]
+visible = false
+forkSpawnArea = Vector2(8, 8)
+arcTtlFactor = 0.5
+spawnInterval = 0.05
+randomInterval = -2.0
+arcIntensity = 0.538
+randomCurvature = 0.0
+arcWildness = 0.0
+impactRadius = 12.0
