@@ -10,15 +10,18 @@ radius = 50.0
 [node name="Tesla" instance=ExtResource("1_ba6mi")]
 script = ExtResource("2_cx0fi")
 
-[node name="ChainArea2D" type="Area2D" parent="." index="10"]
+[node name="ChainLightning" type="Node2D" parent="." index="10"]
+
+[node name="ChainArea2D" type="Area2D" parent="ChainLightning" index="0"]
+rotation = 1.5708
 collision_layer = 0
 collision_mask = 128
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ChainArea2D" index="0"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChainLightning/ChainArea2D" index="0"]
 shape = SubResource("CircleShape2D_gs62l")
 
-[node name="ShootChain1" parent="ChainArea2D" index="1" instance=ExtResource("2_r7mqi")]
-visible = false
+[node name="ShootChain0" parent="ChainLightning" index="1" instance=ExtResource("2_r7mqi")]
+onlyManualSpawn = true
 forkSpawnArea = Vector2(8, 8)
 arcTtlFactor = 0.5
 spawnInterval = 0.05
@@ -26,10 +29,10 @@ randomInterval = -2.0
 arcIntensity = 0.538
 randomCurvature = 0.0
 arcWildness = 0.0
-impactRadius = 12.0
+impactRadius = 5.0
 
-[node name="ShootChain2" parent="ChainArea2D" index="2" instance=ExtResource("2_r7mqi")]
-visible = false
+[node name="ShootChain1" parent="ChainLightning" index="2" instance=ExtResource("2_r7mqi")]
+onlyManualSpawn = true
 forkSpawnArea = Vector2(8, 8)
 arcTtlFactor = 0.5
 spawnInterval = 0.05
@@ -37,10 +40,10 @@ randomInterval = -2.0
 arcIntensity = 0.538
 randomCurvature = 0.0
 arcWildness = 0.0
-impactRadius = 12.0
+impactRadius = 5.0
 
-[node name="ShootChain3" parent="ChainArea2D" index="3" instance=ExtResource("2_r7mqi")]
-visible = false
+[node name="ShootChain2" parent="ChainLightning" index="3" instance=ExtResource("2_r7mqi")]
+onlyManualSpawn = true
 forkSpawnArea = Vector2(8, 8)
 arcTtlFactor = 0.5
 spawnInterval = 0.05
@@ -48,10 +51,10 @@ randomInterval = -2.0
 arcIntensity = 0.538
 randomCurvature = 0.0
 arcWildness = 0.0
-impactRadius = 12.0
+impactRadius = 5.0
 
-[node name="ShootChain4" parent="ChainArea2D" index="4" instance=ExtResource("2_r7mqi")]
-visible = false
+[node name="ShootChain3" parent="ChainLightning" index="4" instance=ExtResource("2_r7mqi")]
+onlyManualSpawn = true
 forkSpawnArea = Vector2(8, 8)
 arcTtlFactor = 0.5
 spawnInterval = 0.05
@@ -59,10 +62,10 @@ randomInterval = -2.0
 arcIntensity = 0.538
 randomCurvature = 0.0
 arcWildness = 0.0
-impactRadius = 12.0
+impactRadius = 5.0
 
-[node name="ShootChain5" parent="ChainArea2D" index="5" instance=ExtResource("2_r7mqi")]
-visible = false
+[node name="ShootChain4" parent="ChainLightning" index="5" instance=ExtResource("2_r7mqi")]
+onlyManualSpawn = true
 forkSpawnArea = Vector2(8, 8)
 arcTtlFactor = 0.5
 spawnInterval = 0.05
@@ -70,10 +73,10 @@ randomInterval = -2.0
 arcIntensity = 0.538
 randomCurvature = 0.0
 arcWildness = 0.0
-impactRadius = 12.0
+impactRadius = 5.0
 
-[node name="ShootChain6" parent="ChainArea2D" index="6" instance=ExtResource("2_r7mqi")]
-visible = false
+[node name="ShootChain5" parent="ChainLightning" index="6" instance=ExtResource("2_r7mqi")]
+onlyManualSpawn = true
 forkSpawnArea = Vector2(8, 8)
 arcTtlFactor = 0.5
 spawnInterval = 0.05
@@ -81,4 +84,4 @@ randomInterval = -2.0
 arcIntensity = 0.538
 randomCurvature = 0.0
 arcWildness = 0.0
-impactRadius = 12.0
+impactRadius = 5.0

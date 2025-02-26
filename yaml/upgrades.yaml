@@ -3,7 +3,6 @@ teslaChain:
   propertyChanges:
     - tesla.chains = 2
     - tesla.splits = 1/h
-    - tesla.radius = 5
     - tesla.chaindistance = 5.0
   predecessors: [tesla]
   locks: [teslaorbs]
@@ -28,17 +27,17 @@ teslaChainLength2:
 teslaChainDistance1:
   cost: iron=6
   propertyChanges:
-    - tesla.chaindistance += 5.0
+    - tesla.chaindistance += 2.5
   predecessors: [teslaChain]
 teslaChainDistance2:
   cost: iron=8
   propertyChanges:
-    - tesla.chaindistance += 5.0
+    - tesla.chaindistance += 2.5
   predecessors: [teslaChainDistance1]
 teslaChainDistance3:
   cost: iron=10, water=4
   propertyChanges:
-    - tesla.chaindistance += 10.0
+    - tesla.chaindistance += 5
   predecessors: [teslaChainDistance2]
 
 teslaorbs:
