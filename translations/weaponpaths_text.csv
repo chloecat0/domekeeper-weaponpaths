@@ -16,3 +16,10 @@ upgrades.teslachaindistance3.desc,Lightning will travel an extreme distance.
 properties.tesla.splits,Forking Chain
 properties.tesla.chains,Enemies Chained {}
 properties.tesla.chaindistance,Chain Distance {}
+upgrades.repellentbattleconfusion.title,Confusion
+upgrades.repellentbattleconfusion.desc,Spray a pheromone laced mist during battle that makes monsters run away.
+upgrades.repellentbattlemoreconfusion1.title,Paranoia
+upgrades.repellentbattlemoreconfusion1.desc,The mist confuses more monsters and lasts longer.
+upgrades.repellentbattlemoreconfusion2.title,Insanity
+upgrades.repellentbattlemoreconfusion2.desc,The mist confuses even more monsters and lasts longer.
+properties.repellent.confuseproportion,Monsters Confused {.percent}

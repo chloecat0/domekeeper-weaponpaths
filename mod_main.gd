@@ -20,7 +20,7 @@ func _init():
 	
 	# Add extensions
 	ModLoaderMod.install_script_extension(ext_dir + "content/weapons/tesla/Tesla.gd")
-	#ModLoaderMod.install_script_extension(ext_dir + "content/weapons/tesla/TeslaThunder.gd")
+	ModLoaderMod.install_script_extension(ext_dir + "content/gadgets/repellent/Repellent.gd")
 
 func _ready():
 	ModLoaderLog.info("Ready", MYMODNAME_LOG)

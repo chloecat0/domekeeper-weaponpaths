@@ -41,3 +41,33 @@ teslaChainDistance3:
 
 teslaorbs:
   locks: [teslaChain]
+
+
+repellentbattleconfusion:
+  cost: iron=4, sand=1
+  propertyChanges:
+    - repellent.battleuses = 1
+    - repellent.battleabilityduration = 3.0
+    - repellent.confuseproportion = 0.3
+    - repellent.particles = 800\h
+  predecessors: [repellent]
+  locks: [repellentbattleslowdown, repellentbattlehealthreduction]
+repellentbattlemoreconfusion1:
+  cost: iron=8, sand=1
+  propertyChanges:
+    - repellent.confuseproportion = 0.45
+    - repellent.battleabilityduration = 4.0
+    - repellent.particles = 1000\h
+  predecessors: [repellentbattleconfusion]
+repellentbattlemoreconfusion2:
+  cost: iron=15, sand=1
+  propertyChanges:
+    - repellent.confuseproportion = 0.6
+    - repellent.battleabilityduration = 5.0
+    - repellent.particles = 1200\h
+  predecessors: [repellentbattlemoreconfusion1]
+
+repellentbattlehealthreduction:
+  locks: [repellentbattleslowdown, repellentbattleconfusion]
+repellentbattleslowdown:
+  locks: [repellentbattlehealthreduction, repellentbattleconfusion]
