@@ -1,21 +1,30 @@
 {
-  "name": "weaponpaths",
-  "namespace": "chloecat",
-  "version_number": "0.0.1",
-  "description": "Adds new paths for dome weapons",
-  "website_url": "",
-  "dependencies": [],
-  "extra": {
-	"godot": {
-	  "authors": ["chloecat"],
-	  "compatible_game_version": ["4.2.1"],
-	  "compatible_mod_loader_version": ["7.0.0"],
-	  "description_rich": "",
-	  "image": null,
-	  "incompatibilities": [],
-	  "load_before": [],
-	  "optional_dependencies": [],
-	  "tags": []
-	}
-  }
+	"dependencies": [],
+	"description": "Adds new paths to the tech tree",
+	"extra": {
+		"godot": {
+			"authors": [
+				"chloecat"
+			],
+			"compatible_game_version": [
+				"4.2.1"
+			],
+			"compatible_mod_loader_version": [
+				"7.0.0"
+			],
+			"config_schema": {
+
+			},
+			"description_rich": "",
+			"image": null,
+			"incompatibilities": [],
+			"load_before": [],
+			"optional_dependencies": [],
+			"tags": []
+		}
+	},
+	"name": "weaponpaths",
+	"namespace": "chloecat",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/chloecat0/domekeeper-weaponpaths/"
 }
